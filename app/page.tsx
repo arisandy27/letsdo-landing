@@ -243,27 +243,41 @@ export default function Home() {
       </section>
 
       <section className="px-6 py-20 md:px-16 lg:px-24">
-        <div className="mx-auto max-w-5xl rounded-[2rem] bg-emerald-700 p-10 text-center text-white shadow-xl md:p-16">
-          <p className="mb-3 font-bold text-emerald-100">Start Here</p>
-          <h2 className="mb-5 text-4xl font-black tracking-tight md:text-5xl">
-            Start with MSDS Toolkit Pro Web.
-          </h2>
+  <div className="mx-auto grid max-w-6xl gap-8 rounded-[2rem] bg-emerald-700 p-10 text-white shadow-xl md:grid-cols-[1.4fr_0.6fr] md:p-16">
+    <div>
+      <p className="mb-3 font-bold text-emerald-100">Request Demo</p>
 
-          <p className="mx-auto mb-9 max-w-2xl text-lg leading-8 text-emerald-50">
-            A practical first step to make chemical document control more
-            structured, traceable, and audit-ready.
-          </p>
+      <h2 className="mb-5 text-4xl font-black tracking-tight md:text-5xl">
+        Want to try Let&apos;s Do tools for your plant team?
+      </h2>
 
-          <a
-            href="https://msds.letsdo.id"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-block rounded-xl bg-white px-8 py-4 font-black text-emerald-800 hover:bg-emerald-50"
-          >
-            Open msds.letsdo.id
-          </a>
-        </div>
-      </section>
+      <p className="max-w-2xl text-lg leading-8 text-emerald-50">
+        Start with MSDS Toolkit Pro Web. Request demo access, pilot discussion,
+        or product explanation through WhatsApp.
+      </p>
+    </div>
+
+    <div className="flex flex-col justify-center gap-4">
+      <a
+        href="https://wa.me/628118712957?text=Halo%20Let%27s%20Do%2C%20saya%20ingin%20request%20demo%20MSDS%20Toolkit%20Pro."
+        target="_blank"
+        rel="noreferrer"
+        className="rounded-xl bg-white px-8 py-4 text-center font-black text-emerald-800 hover:bg-emerald-50"
+      >
+        Request Demo via WhatsApp
+      </a>
+
+      <a
+        href="https://msds.letsdo.id"
+        target="_blank"
+        rel="noreferrer"
+        className="rounded-xl border border-white/40 px-8 py-4 text-center font-black text-white hover:bg-white/10"
+      >
+        Open MSDS Toolkit
+      </a>
+    </div>
+  </div>
+</section>
 
       <footer className="border-t border-slate-200 px-6 py-8 md:px-16 lg:px-24">
         <div className="mx-auto flex max-w-6xl flex-col justify-between gap-4 text-sm text-slate-500 md:flex-row">
@@ -278,6 +292,14 @@ export default function Home() {
             <a href="https://msds.letsdo.id" className="hover:text-emerald-700">
               msds.letsdo.id
             </a>
+<a
+  href="https://wa.me/628118712957"
+  target="_blank"
+  rel="noreferrer"
+  className="hover:text-emerald-700"
+>
+  WhatsApp
+</a>
           </div>
         </div>
       </footer>
