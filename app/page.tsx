@@ -38,7 +38,7 @@ const users = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#F7F4EF] text-[#132018]">
-      <section className="px-6 py-8 md:px-16 lg:px-24">
+      <section className="px-6 py-6 md:px-16 lg:px-24">
         <nav className="flex items-center justify-between">
           <a href="/" className="text-2xl font-black tracking-tight">
             Let&apos;s Do<span className="text-emerald-700">..!</span>
@@ -66,18 +66,18 @@ export default function Home() {
           </a>
         </nav>
 
-        <div className="grid min-h-[68vh] items-center gap-10 py-10 lg:grid-cols-2">
+        <div className="grid min-h-[62vh] items-center gap-8 py-8 lg:grid-cols-2">
           <div>
             <p className="mb-5 inline-block rounded-full bg-emerald-100 px-4 py-2 text-sm font-bold text-emerald-800">
               Digital Tools for Safer & Better Operations
             </p>
 
-            <h1 className="mb-6 max-w-4xl text-4xl font-black leading-tight tracking-tight md:text-6xl">
+            <h1 className="mb-5 max-w-4xl text-4xl font-black leading-tight tracking-tight md:text-5xl">
               Practical tools for chemical plant, safety, and manufacturing
               teams.
             </h1>
 
-            <p className="mb-8 max-w-2xl text-lg leading-8 text-slate-700">
+            <p className="mb-6 max-w-2xl text-base leading-7 text-slate-700 md:text-lg">
               Let&apos;s Do helps plant teams manage SDS/MSDS, improve process
               safety, monitor actions, and convert operational data into better
               decisions.
@@ -101,7 +101,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="mt-10 grid max-w-xl grid-cols-3 gap-4 text-center">
+            <div className="mt-8 grid max-w-xl grid-cols-3 gap-3 text-center">
               <div className="rounded-2xl bg-white p-4 shadow-sm">
                 <p className="text-2xl font-black text-emerald-700">01</p>
                 <p className="mt-1 text-xs font-semibold text-slate-600">
