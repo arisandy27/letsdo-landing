@@ -39,123 +39,135 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#F7F4EF] text-[#132018]">
       <section className="px-6 py-6 md:px-16 lg:px-24">
-        <nav className="flex items-center justify-between">
-          <a href="/" className="text-2xl font-black tracking-tight">
-            Let&apos;s Do<span className="text-emerald-700">..!</span>
-          </a>
+  <nav className="grid grid-cols-3 items-start">
+  <div className="flex justify-start">
+    <div className="flex flex-col items-center">
+      <a href="/" className="flex items-center justify-start">
+        <img
+          src="/icon.png"
+          alt="Let's Do logo"
+          className="h-16 w-auto md:h-20"
+        />
+      </a>
 
-          <div className="hidden items-center gap-8 text-sm font-semibold md:flex">
-            <a href="#products" className="hover:text-emerald-700">
-              Products
-            </a>
-            <a href="#users" className="hover:text-emerald-700">
-              Users
-            </a>
-            <a href="#value" className="hover:text-emerald-700">
-              Value
-            </a>
+      <div className="mt-3">
+        <p className="inline-block rounded-full bg-emerald-100 px-4 py-2 text-sm font-bold text-emerald-800">
+          Digital Tools for Safer & Better Operations
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <div className="hidden justify-center gap-8 text-sm font-semibold md:flex">
+      <a href="#products" className="hover:text-emerald-700">
+        Products
+      </a>
+      <a href="#users" className="hover:text-emerald-700">
+        Users
+      </a>
+      <a href="#value" className="hover:text-emerald-700">
+        Value
+      </a>
+    </div>
+
+    <div className="flex justify-end">
+      <a
+        href="https://msds.letsdo.id"
+        target="_blank"
+        rel="noreferrer"
+        className="rounded-full bg-[#132018] px-5 py-3 text-sm font-bold text-white shadow-sm hover:bg-emerald-800"
+      >
+        Open MSDS Toolkit
+      </a>
+    </div>
+  </nav>
+
+  <div className="grid min-h-[62vh] items-center gap-8 py-8 lg:grid-cols-2">
+    <div>
+      
+      
+      <h1 className="mb-5 max-w-4xl text-4xl font-black leading-tight tracking-tight md:text-5xl">
+        Practical tools for chemical plant, safety, and manufacturing teams.
+      </h1>
+
+      <p className="mb-6 max-w-2xl text-base leading-7 text-slate-700 md:text-lg">
+        Let&apos;s Do helps plant teams manage SDS/MSDS, improve process safety,
+        monitor actions, and convert operational data into better decisions.
+      </p>
+
+      <div className="flex flex-col gap-4 sm:flex-row">
+        <a
+          href="https://msds.letsdo.id"
+          target="_blank"
+          rel="noreferrer"
+          className="rounded-xl bg-emerald-700 px-7 py-4 text-center font-bold text-white shadow-sm hover:bg-emerald-800"
+        >
+          Try MSDS Toolkit Pro
+        </a>
+
+        <a
+          href="#products"
+          className="rounded-xl border border-slate-300 bg-white/50 px-7 py-4 text-center font-bold hover:bg-white"
+        >
+          See Product Line
+        </a>
+      </div>
+
+      <div className="mt-8 grid max-w-xl grid-cols-3 gap-3 text-center">
+        <div className="rounded-2xl bg-white p-4 shadow-sm">
+          <p className="text-2xl font-black text-emerald-700">01</p>
+          <p className="mt-1 text-xs font-semibold text-slate-600">
+            Live Web App
+          </p>
+        </div>
+        <div className="rounded-2xl bg-white p-4 shadow-sm">
+          <p className="text-2xl font-black text-emerald-700">SDS</p>
+          <p className="mt-1 text-xs font-semibold text-slate-600">
+            Document Control
+          </p>
+        </div>
+        <div className="rounded-2xl bg-white p-4 shadow-sm">
+          <p className="text-2xl font-black text-emerald-700">QHSE</p>
+          <p className="mt-1 text-xs font-semibold text-slate-600">
+            Audit Ready
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="rounded-[2rem] bg-white p-6 shadow-2xl">
+      <div className="rounded-[1.5rem] bg-[#132018] p-8 text-white">
+        <p className="mb-3 text-sm font-semibold text-emerald-200">
+          Featured Product
+        </p>
+
+        <h2 className="mb-4 text-4xl font-black">
+          MSDS Toolkit Pro Web
+        </h2>
+
+        <p className="mb-8 leading-7 text-slate-200">
+          Manage material master data, SDS documents, hazard information,
+          review status, and compliance readiness in one simple web app.
+        </p>
+
+        <div className="grid gap-4 text-sm font-semibold">
+          <div className="rounded-xl bg-white/10 p-4">
+            ✓ SDS document control
           </div>
-
-          <a
-            href="https://msds.letsdo.id"
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-full bg-[#132018] px-5 py-3 text-sm font-bold text-white shadow-sm hover:bg-emerald-800"
-          >
-            Open MSDS Toolkit
-          </a>
-        </nav>
-
-        <div className="grid min-h-[62vh] items-center gap-8 py-8 lg:grid-cols-2">
-          <div>
-            <p className="mb-5 inline-block rounded-full bg-emerald-100 px-4 py-2 text-sm font-bold text-emerald-800">
-              Digital Tools for Safer & Better Operations
-            </p>
-
-            <h1 className="mb-5 max-w-4xl text-4xl font-black leading-tight tracking-tight md:text-5xl">
-              Practical tools for chemical plant, safety, and manufacturing
-              teams.
-            </h1>
-
-            <p className="mb-6 max-w-2xl text-base leading-7 text-slate-700 md:text-lg">
-              Let&apos;s Do helps plant teams manage SDS/MSDS, improve process
-              safety, monitor actions, and convert operational data into better
-              decisions.
-            </p>
-
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <a
-                href="https://msds.letsdo.id"
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-xl bg-emerald-700 px-7 py-4 text-center font-bold text-white shadow-sm hover:bg-emerald-800"
-              >
-                Try MSDS Toolkit Pro
-              </a>
-
-              <a
-                href="#products"
-                className="rounded-xl border border-slate-300 bg-white/50 px-7 py-4 text-center font-bold hover:bg-white"
-              >
-                See Product Line
-              </a>
-            </div>
-
-            <div className="mt-8 grid max-w-xl grid-cols-3 gap-3 text-center">
-              <div className="rounded-2xl bg-white p-4 shadow-sm">
-                <p className="text-2xl font-black text-emerald-700">01</p>
-                <p className="mt-1 text-xs font-semibold text-slate-600">
-                  Live Web App
-                </p>
-              </div>
-              <div className="rounded-2xl bg-white p-4 shadow-sm">
-                <p className="text-2xl font-black text-emerald-700">SDS</p>
-                <p className="mt-1 text-xs font-semibold text-slate-600">
-                  Document Control
-                </p>
-              </div>
-              <div className="rounded-2xl bg-white p-4 shadow-sm">
-                <p className="text-2xl font-black text-emerald-700">QHSE</p>
-                <p className="mt-1 text-xs font-semibold text-slate-600">
-                  Audit Ready
-                </p>
-              </div>
-            </div>
+          <div className="rounded-xl bg-white/10 p-4">
+            ✓ Hazard & pictogram mapping
           </div>
-
-          <div className="rounded-[2rem] bg-white p-6 shadow-2xl">
-            <div className="rounded-[1.5rem] bg-[#132018] p-8 text-white">
-              <p className="mb-3 text-sm font-semibold text-emerald-200">
-                Featured Product
-              </p>
-
-              <h2 className="mb-4 text-4xl font-black">
-                MSDS Toolkit Pro Web
-              </h2>
-
-              <p className="mb-8 leading-7 text-slate-200">
-                Manage material master data, SDS documents, hazard information,
-                review status, and compliance readiness in one simple web app.
-              </p>
-
-              <div className="grid gap-4 text-sm font-semibold">
-                <div className="rounded-xl bg-white/10 p-4">
-                  ✓ SDS document control
-                </div>
-                <div className="rounded-xl bg-white/10 p-4">
-                  ✓ Hazard & pictogram mapping
-                </div>
-                <div className="rounded-xl bg-white/10 p-4">
-                  ✓ Review date monitoring
-                </div>
-                <div className="rounded-xl bg-white/10 p-4">
-                  ✓ Material master database
-                </div>
-              </div>
-            </div>
+          <div className="rounded-xl bg-white/10 p-4">
+            ✓ Review date monitoring
+          </div>
+          <div className="rounded-xl bg-white/10 p-4">
+            ✓ Material master database
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section id="value" className="bg-white px-6 py-20 md:px-16 lg:px-24">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2">
