@@ -66,13 +66,13 @@ export default function Home() {
           </a>
         </nav>
 
-        <div className="grid min-h-[78vh] items-center gap-12 py-16 lg:grid-cols-2">
+        <div className="grid min-h-[68vh] items-center gap-10 py-10 lg:grid-cols-2">
           <div>
             <p className="mb-5 inline-block rounded-full bg-emerald-100 px-4 py-2 text-sm font-bold text-emerald-800">
               Digital Tools for Safer & Better Operations
             </p>
 
-            <h1 className="mb-6 max-w-4xl text-5xl font-black leading-tight tracking-tight md:text-7xl">
+            <h1 className="mb-6 max-w-4xl text-4xl font-black leading-tight tracking-tight md:text-6xl">
               Practical tools for chemical plant, safety, and manufacturing
               teams.
             </h1>
